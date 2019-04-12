@@ -16,8 +16,8 @@
 </head>
 <body>
     <div id="app">
-        <div v-pin="card1.pinned" class="card" ><button @click="card1.pinned = !card1.pinned">yes/no</button> do you like van youxi? yes I like !</div>
-        <div v-pin="card2.pinned" class="card" >do you like van youxi? yes I like !</div>
+        <div v-pin:warn.bottom.left="card1.pinned" class="card" ><button @click="toggle1">yes/no</button> do you like van youxi? yes I like !</div>
+        <div v-pin:warn.bottom.left="card2.pinned" class="card" ><a @click="toggle2" href="#">yes/no</a> do you like van youxi? yes I like !</div>
         <div>
             do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !do you like van youxi? yes I like !
         </div>

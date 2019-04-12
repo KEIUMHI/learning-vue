@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue-slots</title>
+</head>
+<style>
+    .penel{
+        max-width: 300px;
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+    .penel .header{
+        border-bottom: solid 1px;
+    }
+    .penel .footer{
+        border-top: solid 1px;
+    }
+</style>
+<body>
+     <div id="app">
+        <penel>
+            <div slot="header">this is header</div>
+            <div slot="content">dlafja</div>
+            <div slot="footer">More massger</div>
+        </penle>
+     </div>
+     <template id="penel-tpl">
+        <div class="penel">
+            <div class="header">
+                <slot name="header">header</slot>
+            </div>
+            <div class="content">
+                <slot name="content">Do you like van youxi ?Do you like van youxi ?Do you like van youxi ?</slot>
+            </div>
+            <div class="footer">
+                <slot name="footer">More msg</slot>
+            </div>
+        </div>
+     </template>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
